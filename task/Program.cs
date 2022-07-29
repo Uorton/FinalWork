@@ -12,16 +12,16 @@ string[] array1 = new string[]{"Hello", "World", "!!", ":-)"};
 
 int GetSizeNewArray(string[] array1)
 {
-    int count = 0;
+    int size = 0;
     for (int i = 0; i < array1.Length; i++)
     {
         if (array1[i].Length <= 3)
         {
-            count++;
+            size++;
         }
         System.Console.WriteLine($"{array1[i]}");
     }
-    return count;
+    return size;
 }
 
 
@@ -40,8 +40,8 @@ void FillNewArray(string[] array1, string[] newArray)
 }
 
 
-int count = GetSizeNewArray(array1);
-string[] newArray = new string[count];
+int size = GetSizeNewArray(array1);
+string[] newArray = new string[size];
 
 System.Console.WriteLine();
 FillNewArray(array1,newArray);
